@@ -12,41 +12,41 @@ Installation
 Clone the Repository:
 
 bash
-Kodu kopyala
-git clone https://your-repo-url.git
+#####
+git clone https://github.com/bagdadinvest/wisdar2
 cd wisdar
 Create a Virtual Environment:
 
 bash
-Kodu kopyala
+#####
 python3 -m venv env
 source env/bin/activate  # On Windows use `env\Scripts\activate`
 Install Dependencies:
 
 bash
-Kodu kopyala
+#####
 pip install -r requirements.txt
 Environment Variables:
 Set up the following environment variables in a .env file or your system environment:
 
 env
-Kodu kopyala
+#####
 DJANGO_SECRET_KEY=your-secret-key
 DJANGO_PRODUCTION=false  # Set to true in production
 Run Migrations:
 
 bash
-Kodu kopyala
+#####
 python manage.py migrate
 Create a Superuser:
 
 bash
-Kodu kopyala
+#####
 python manage.py createsuperuser
 Run the Development Server:
 
 bash
-Kodu kopyala
+#####
 python manage.py runserver
 Configuration
 ASGI and WSGI:
@@ -56,7 +56,7 @@ Static Files:
 Ensure static files are collected in production by running:
 
 bash
-Kodu kopyala
+#####
 python manage.py collectstatic
 Deployment on Azure Websites
 Deployment Process:
@@ -81,7 +81,7 @@ Email Configuration
 The application uses SMTP with Office365 for sending emails. Set up the following in settings.py:
 
 python
-Kodu kopyala
+#####
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.office365.com'
 EMAIL_PORT = 587
